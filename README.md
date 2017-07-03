@@ -1,10 +1,10 @@
 # Netflix Library Crawler
 
-This is a program that will get a list of everything in Netflix's library.
+This is a program that will get a list of all movie and TV show titles in Netflix's library.
 
 ## See the data
 
-I've included the output of the crawler in the `output/` folder, split by genre as well as creating an `output/All-Movies` file.
+I've included the output of the crawler in the `output/` folder, split by genre as well as creating an [`output/All-Movies`](output/All-Movies) file.
 
 ## Running the crawler
 
