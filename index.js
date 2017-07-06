@@ -32,7 +32,11 @@ driver.get('https://www.facebook.com/')
   .then(_ => driver.sleep(1000))
   .then(_ => driver.findElements(By.css('.sub-menu .sub-menu-link')))
   .then(elements => Promise.all(elements.map((element) => element.getAttribute('href'))))
-  .then(pageUrls => pageUrls.filter((url) => url.indexOf('genre') > 0 ))
+  .then(pageUrls => {
+    pageUrls = pageUrls.filter((url) => url.indexOf('genre') > 0 );
+    pageUrls.push('https://www.netflix.com/browse/originals')
+    return pageUrls;
+  })
   .then(pageUrls => {
     console.log('Crawling pages: ');
     console.log(pageUrls.join('\n'));
