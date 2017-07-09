@@ -34,7 +34,7 @@ driver.get('https://www.facebook.com/')
   .then(elements => Promise.all(elements.map((element) => element.getAttribute('href'))))
   .then(pageUrls => {
     pageUrls = pageUrls.filter((url) => url.indexOf('genre') > 0 );
-    pageUrls.push('https://www.netflix.com/browse/originals')
+    pageUrls.push('https://www.netflix.com/browse/originals');
     return pageUrls;
   })
   .then(pageUrls => {
@@ -80,7 +80,7 @@ driver.get('https://www.facebook.com/')
               return (new Promise((resolve, reject) => {
                 setTimeout(() => {
                   resolve(true);
-                }, 1500)
+                }, 3000)
               }))
                 .then(scrollUntilAtPageBottom);
             }
