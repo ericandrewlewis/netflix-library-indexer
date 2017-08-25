@@ -1,10 +1,10 @@
-# Netflix Library Crawler
+# Netflix Library Indexer
 
 This is a program that will get a list of all movie and TV show titles in Netflix's library.
 
 ## See the data
 
-I've included the output of the crawler in the `output/` folder, split by genre as well as creating an [`output/All-Movies`](output/All-Movies) file.
+I've included the output of the indexer in the `output/` folder, split by genre as well as creating an [`output/All-Movies`](output/All-Movies) file.
 
 ## Running the crawler
 
@@ -29,10 +29,10 @@ FACEBOOK_PASSWORD=
 
 and fill in your Facebook email and password. I log into Netflix through my Facebook account, so the crawler currently has this requirement. If you log in to Netflix with a username and password, the crawler could be modified to use that instead.
 
-Run the crawler
+Run the indexer
 
 ```
 npm start
 ```
 
-The crawler will go through all genre pages listed in the top-level navigation and put results into genre-specific files in the `output/` folder, as well as an aggregate `output/All-Movies` file.
+The indexer will go through all genre pages listed in the top-level navigation and put results into genre-specific files in the `output/` folder, as well as an aggregate `output/All-Movies` file.
