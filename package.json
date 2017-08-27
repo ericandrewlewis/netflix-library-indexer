@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "array-unique": "^0.3.2",
     "dotenv": "^4.0.0",
     "selenium-webdriver": "^3.4.0",
     "slug": "^0.9.1"
