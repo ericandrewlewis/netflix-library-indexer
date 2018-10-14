@@ -1,5 +1,7 @@
 # Netflix Library Indexer
 
+# This worked as of July 2017 but has not been maintained since
+
 This is a program that will get a list of all movie and TV show titles in Netflix's library.
 
 ## See the data
